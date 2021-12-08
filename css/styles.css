@@ -1,9 +1,97 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    min-height: 100%;
+    background-repeat: no-repeat;
+  }
+
+body {
+    background-color: #181b1e;
+    background-image: linear-gradient(#232d3b, #0f0d11);
+    background-attachment: fixed;
+}
+
+.game-trailer > iframe {
+    max-width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p, h1, ul {
+    color: white;
+}
+
+.game-logo {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.game-info {
+    padding-top: 1.5em;
+    color: white;
+}
+
+.presskit > div {
+    margin-bottom: 1.5em;
+}
+
+.factsheet {
+    overflow: hidden;
+}
+
+.factsheet > div {
+    margin-bottom: 1.5em;
+}
+
+.factsheet > div > p {
+    margin: 0px;
+    color: white;
+}
+
+.game-link {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.game-link > iframe {
+    max-width: 100%;
+}
+
 .sm-icons {
     flex-direction: row;
 }
 
+/* Small devices (landscape phones, 544px and up) */
 @media only screen and (max-width: 960px) {
     .sm-icons .nav-item {
         padding-right: 1em;
     }
+}
+
+@media (min-width: 544px) {  
+    p, ul {font-size:0.8em;}
+    h1 {font-size:1.6rem;}
+}
+   
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    p, ul {font-size:0.9rem;}
+    h1 {font-size:1.8rem;}
+}
+   
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    p, ul {font-size:1.0rem;}
+    h1 {font-size:2.0rem;}
+}
+   
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    p, ul {font-size:1.1rem;}  
+    h1 {font-size:2.2rem;}
 }
